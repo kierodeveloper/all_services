@@ -1,0 +1,23 @@
+
+CREATE TABLE DBKiero_Productos.dbo.users_kiero (
+	id int IDENTITY(1,1) NOT NULL,
+	name varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	lastname varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	nickname varchar(16) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	document_id bigint NULL,
+	number_phone bigint  NULL,
+	addresses bit NULL,
+	email varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	password varchar(250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	access_token varchar(250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	source_ip varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	email_status int NULL,
+	questions_id int NULL,
+	shipping_id int NULL,
+	status int NULL,
+	create_at varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	update_at varchar(20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	token_confirmation_email varchar(300) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	email_confirmation_sent_on varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	email_confirmed_on varchar(100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)

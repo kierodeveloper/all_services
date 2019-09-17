@@ -1,0 +1,1729 @@
+[2019-06-28 07:43:46 -0500] [15866] [INFO] Starting gunicorn 19.9.0
+[2019-06-28 07:43:46 -0500] [15866] [INFO] Listening at: http://127.0.0.1:4448 (15866)
+[2019-06-28 07:43:46 -0500] [15866] [INFO] Using worker: sync
+[2019-06-28 07:43:46 -0500] [15869] [INFO] Booting worker with pid: 15869
+[2019-06-28 11:24:15,002] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '2'. (102) (SQLExecDirectW)")
+[2019-06-28 11:24:23,117] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '2'. (102) (SQLExecDirectW)")
+[2019-06-28 11:24:51,512] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '2'. (102) (SQLExecDirectW)")
+[2019-06-29 01:05:45 -0500] [15866] [CRITICAL] WORKER TIMEOUT (pid:15869)
+[2019-06-29 01:06:22 -0500] [29573] [INFO] Booting worker with pid: 29573
+[2019-06-29 01:06:52 -0500] [15866] [CRITICAL] WORKER TIMEOUT (pid:29573)
+[2019-06-29 01:06:52 -0500] [29573] [INFO] Worker exiting (pid: 29573)
+[2019-06-29 01:06:52 -0500] [29621] [INFO] Booting worker with pid: 29621
+[2019-07-02 11:13:44,058] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='. (102) (SQLExecDirectW)")
+[2019-07-02 11:17:20,023] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='. (102) (SQLExecDirectW)")
+[2019-07-03 07:26:48,276] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Incorrect syntax near '='. (102) (SQLExecDirectW)")
+[2019-07-03 10:50:36 -0500] [15866] [INFO] Handling signal: term
+[2019-07-03 10:50:36 -0500] [29621] [INFO] Worker exiting (pid: 29621)
+[2019-07-03 10:50:36 -0500] [15866] [INFO] Shutting down: Master
+[2019-07-03 10:50:48 -0500] [16651] [INFO] Starting gunicorn 19.9.0
+[2019-07-03 10:50:48 -0500] [16651] [INFO] Listening at: http://127.0.0.1:4448 (16651)
+[2019-07-03 10:50:48 -0500] [16651] [INFO] Using worker: sync
+[2019-07-03 10:50:49 -0500] [16739] [INFO] Booting worker with pid: 16739
+[2019-07-06 03:35:41 -0500] [16651] [CRITICAL] WORKER TIMEOUT (pid:16739)
+[2019-07-06 03:35:49 -0500] [22891] [INFO] Booting worker with pid: 22891
+[2019-07-06 03:36:19 -0500] [16651] [CRITICAL] WORKER TIMEOUT (pid:22891)
+[2019-07-06 03:36:19 -0500] [22891] [INFO] Worker exiting (pid: 22891)
+[2019-07-06 03:36:23 -0500] [22914] [INFO] Booting worker with pid: 22914
+[2019-07-08 12:58:36 -0500] [16651] [INFO] Handling signal: term
+[2019-07-08 12:58:36 -0500] [22914] [INFO] Worker exiting (pid: 22914)
+[2019-07-08 12:58:51 -0500] [16651] [INFO] Shutting down: Master
+[2019-07-08 12:58:57 -0500] [13893] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 12:58:57 -0500] [13893] [INFO] Listening at: http://127.0.0.1:4448 (13893)
+[2019-07-08 12:58:57 -0500] [13893] [INFO] Using worker: sync
+[2019-07-08 12:58:57 -0500] [13993] [INFO] Booting worker with pid: 13993
+[2019-07-08 14:06:24,237] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: Error code 0x68 (104) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:06:57,158] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:09:43,888] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:10:31,269] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:12:38,094] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:16:16,958] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:24:54,519] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:30:46,343] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:31:35,798] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:31:49,291] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:32:00,305] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:36:15,490] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:36:18,673] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:36:32,802] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:36:36,828] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:37:25,375] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:37:30,810] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:37:36,639] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:42:06,144] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:45:57,961] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:46:53,466] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:55:44,131] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:55:49,901] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:55:50,470] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:56:06,604] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:56:26,129] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:56:31,105] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:56:46,485] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:57:13,061] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:57:38,974] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:57:52,396] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 14:58:16,984] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:01:40,677] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:02:01,545] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:02:05,111] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:07:39,529] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:10:23,262] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:12:26,850] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:16:28,507] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:16:32,108] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:17:24,569] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:17:28,621] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:18:47,036] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:19:45,321] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:20:16,085] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:21:24,324] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLExecDirectW)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 51, in get
+    crsr.fast_executemany = True
+pyodbc.OperationalError: ('08S01', '[08S01] [Microsoft][ODBC Driver 17 for SQL Server]Communication link failure (0) (SQLEndTran(SQL_ROLLBACK))')
+[2019-07-08 15:46:58 -0500] [13893] [CRITICAL] WORKER TIMEOUT (pid:13993)
+[2019-07-08 15:46:58 -0500] [13993] [INFO] Worker exiting (pid: 13993)
+[2019-07-08 15:47:04 -0500] [17052] [INFO] Booting worker with pid: 17052
+[2019-07-08 15:47:50 -0500] [13893] [INFO] Handling signal: term
+[2019-07-08 15:47:50 -0500] [17052] [INFO] Worker exiting (pid: 17052)
+[2019-07-08 15:47:50 -0500] [13893] [INFO] Shutting down: Master
+[2019-07-08 15:49:24 -0500] [1750] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 15:49:24 -0500] [1750] [INFO] Listening at: http://127.0.0.1:4448 (1750)
+[2019-07-08 15:49:24 -0500] [1750] [INFO] Using worker: sync
+[2019-07-08 15:49:25 -0500] [2339] [INFO] Booting worker with pid: 2339
+[2019-07-08 15:58:12 -0500] [1750] [INFO] Handling signal: term
+[2019-07-08 15:58:12 -0500] [2339] [INFO] Worker exiting (pid: 2339)
+[2019-07-08 15:58:13 -0500] [1750] [INFO] Shutting down: Master
+[2019-07-08 15:58:22 -0500] [3149] [INFO] Starting gunicorn 19.9.0
+[2019-07-08 15:58:22 -0500] [3149] [INFO] Listening at: http://127.0.0.1:4448 (3149)
+[2019-07-08 15:58:22 -0500] [3149] [INFO] Using worker: sync
+[2019-07-08 15:58:22 -0500] [3215] [INFO] Booting worker with pid: 3215
+[2019-07-10 17:50:55 -0500] [3149] [INFO] Handling signal: term
+[2019-07-10 17:50:55 -0500] [3215] [INFO] Worker exiting (pid: 3215)
+[2019-07-10 17:50:56 -0500] [3149] [INFO] Shutting down: Master
+[2019-07-10 17:51:02 -0500] [26097] [INFO] Starting gunicorn 19.9.0
+[2019-07-10 17:51:02 -0500] [26097] [INFO] Listening at: http://127.0.0.1:4448 (26097)
+[2019-07-10 17:51:02 -0500] [26097] [INFO] Using worker: sync
+[2019-07-10 17:51:02 -0500] [26219] [INFO] Booting worker with pid: 26219
+[2019-07-11 10:06:55 -0500] [2012] [INFO] Starting gunicorn 19.9.0
+[2019-07-11 10:06:55 -0500] [2012] [INFO] Listening at: http://127.0.0.1:4448 (2012)
+[2019-07-11 10:06:55 -0500] [2012] [INFO] Using worker: sync
+[2019-07-11 10:06:55 -0500] [2789] [INFO] Booting worker with pid: 2789
+[2019-07-11 10:07:25 -0500] [2012] [CRITICAL] WORKER TIMEOUT (pid:2789)
+[2019-07-11 10:07:26 -0500] [2789] [INFO] Worker exiting (pid: 2789)
+[2019-07-11 10:07:26 -0500] [3581] [INFO] Booting worker with pid: 3581
+[2019-07-11 10:08:42 -0500] [2012] [INFO] Handling signal: term
+[2019-07-11 10:08:42 -0500] [3581] [INFO] Worker exiting (pid: 3581)
+[2019-07-11 10:08:42 -0500] [2012] [INFO] Shutting down: Master
+[2019-07-11 10:08:55 -0500] [3848] [INFO] Starting gunicorn 19.9.0
+[2019-07-11 10:08:55 -0500] [3848] [INFO] Listening at: http://127.0.0.1:4448 (3848)
+[2019-07-11 10:08:55 -0500] [3848] [INFO] Using worker: sync
+[2019-07-11 10:08:55 -0500] [3891] [INFO] Booting worker with pid: 3891
+[2019-07-12 10:49:28 -0500] [3848] [CRITICAL] WORKER TIMEOUT (pid:3891)
+[2019-07-12 10:49:28 -0500] [3891] [INFO] Worker exiting (pid: 3891)
+[2019-07-12 10:49:29 -0500] [16131] [INFO] Booting worker with pid: 16131
+[2019-07-12 14:54:43 -0500] [2132] [INFO] Starting gunicorn 19.9.0
+[2019-07-12 14:54:43 -0500] [2132] [INFO] Listening at: http://127.0.0.1:4448 (2132)
+[2019-07-12 14:54:43 -0500] [2132] [INFO] Using worker: sync
+[2019-07-12 14:54:43 -0500] [2347] [INFO] Booting worker with pid: 2347
+[2019-07-12 14:55:13 -0500] [2132] [CRITICAL] WORKER TIMEOUT (pid:2347)
+[2019-07-12 14:55:17 -0500] [2898] [INFO] Booting worker with pid: 2898
+[2019-07-12 14:55:47 -0500] [2132] [CRITICAL] WORKER TIMEOUT (pid:2898)
+[2019-07-12 14:55:47 -0500] [2898] [INFO] Worker exiting (pid: 2898)
+[2019-07-12 14:55:48 -0500] [3045] [INFO] Booting worker with pid: 3045
+[2019-07-13 00:05:38 -0500] [2132] [CRITICAL] WORKER TIMEOUT (pid:3045)
+[2019-07-13 00:05:38 -0500] [3045] [INFO] Worker exiting (pid: 3045)
+[2019-07-13 00:05:44 -0500] [6278] [INFO] Booting worker with pid: 6278
+[2019-07-13 12:04:02 -0500] [2132] [INFO] Handling signal: term
+[2019-07-13 12:04:02 -0500] [6278] [INFO] Worker exiting (pid: 6278)
+[2019-07-13 12:04:03 -0500] [2132] [INFO] Shutting down: Master
+[2019-07-13 12:04:15 -0500] [8722] [INFO] Starting gunicorn 19.9.0
+[2019-07-13 12:04:15 -0500] [8722] [INFO] Listening at: http://127.0.0.1:4448 (8722)
+[2019-07-13 12:04:15 -0500] [8722] [INFO] Using worker: sync
+[2019-07-13 12:04:15 -0500] [8772] [INFO] Booting worker with pid: 8772
+[2019-07-13 13:17:24 -0500] [8722] [INFO] Handling signal: term
+[2019-07-13 13:17:24 -0500] [8772] [INFO] Worker exiting (pid: 8772)
+[2019-07-13 13:17:24 -0500] [8722] [INFO] Shutting down: Master
+[2019-07-13 13:17:27 -0500] [9582] [INFO] Starting gunicorn 19.9.0
+[2019-07-13 13:17:27 -0500] [9582] [INFO] Listening at: http://127.0.0.1:4448 (9582)
+[2019-07-13 13:17:27 -0500] [9582] [INFO] Using worker: sync
+[2019-07-13 13:17:27 -0500] [9615] [INFO] Booting worker with pid: 9615
+[2019-07-16 04:05:51 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:9615)
+[2019-07-16 04:06:04 -0500] [9615] [INFO] Worker exiting (pid: 9615)
+[2019-07-16 04:06:47 -0500] [26418] [INFO] Booting worker with pid: 26418
+[2019-07-16 04:07:17 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:26418)
+[2019-07-16 04:07:18 -0500] [26418] [INFO] Worker exiting (pid: 26418)
+[2019-07-16 04:07:18 -0500] [26419] [INFO] Booting worker with pid: 26419
+[2019-07-16 04:07:48 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:26419)
+[2019-07-16 04:07:49 -0500] [26419] [INFO] Worker exiting (pid: 26419)
+[2019-07-16 04:07:50 -0500] [26421] [INFO] Booting worker with pid: 26421
+[2019-07-16 04:08:20 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:26421)
+[2019-07-16 04:08:21 -0500] [26423] [INFO] Booting worker with pid: 26423
+[2019-07-16 08:56:10 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:26423)
+[2019-07-16 08:59:50 -0500] [29463] [INFO] Booting worker with pid: 29463
+[2019-07-16 09:01:36 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:29463)
+[2019-07-16 09:04:08 -0500] [29497] [INFO] Booting worker with pid: 29497
+[2019-07-16 09:04:38 -0500] [9582] [CRITICAL] WORKER TIMEOUT (pid:29497)
+[2019-07-16 09:04:39 -0500] [29627] [INFO] Booting worker with pid: 29627
+[2019-07-16 12:46:28,477] ERROR in app: Exception on /get_all_qa [GET]
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 49, in get
+    crsr = conn.execute(query)
+pyodbc.ProgrammingError: ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Comprar'. (207) (SQLExecDirectW)")
+[2019-07-16 15:38:31 -0500] [2063] [INFO] Starting gunicorn 19.9.0
+[2019-07-16 15:38:31 -0500] [2063] [INFO] Listening at: http://127.0.0.1:4448 (2063)
+[2019-07-16 15:38:31 -0500] [2063] [INFO] Using worker: sync
+[2019-07-16 15:38:31 -0500] [2390] [INFO] Booting worker with pid: 2390
+[2019-07-16 15:42:34 -0500] [2063] [INFO] Handling signal: term
+[2019-07-16 15:42:34 -0500] [2390] [INFO] Worker exiting (pid: 2390)
+[2019-07-16 15:42:35 -0500] [2063] [INFO] Shutting down: Master
+[2019-07-16 15:42:46 -0500] [3308] [INFO] Starting gunicorn 19.9.0
+[2019-07-16 15:42:46 -0500] [3308] [INFO] Listening at: http://127.0.0.1:4448 (3308)
+[2019-07-16 15:42:46 -0500] [3308] [INFO] Using worker: sync
+[2019-07-16 15:42:46 -0500] [3383] [INFO] Booting worker with pid: 3383
+[2019-07-17 13:31:42 -0500] [2051] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 13:31:42 -0500] [2051] [INFO] Listening at: http://127.0.0.1:4448 (2051)
+[2019-07-17 13:31:42 -0500] [2051] [INFO] Using worker: sync
+[2019-07-17 13:31:42 -0500] [2412] [INFO] Booting worker with pid: 2412
+[2019-07-17 17:22:13 -0500] [2031] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:22:13 -0500] [2031] [INFO] Listening at: http://127.0.0.1:4448 (2031)
+[2019-07-17 17:22:13 -0500] [2031] [INFO] Using worker: sync
+[2019-07-17 17:22:13 -0500] [2311] [INFO] Booting worker with pid: 2311
+[2019-07-17 17:22:39 -0500] [2031] [INFO] Handling signal: term
+[2019-07-17 17:22:39 -0500] [2311] [INFO] Worker exiting (pid: 2311)
+[2019-07-17 17:22:40 -0500] [2031] [INFO] Shutting down: Master
+[2019-07-17 17:22:42 -0500] [3146] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:22:42 -0500] [3146] [INFO] Listening at: http://127.0.0.1:4448 (3146)
+[2019-07-17 17:22:42 -0500] [3146] [INFO] Using worker: sync
+[2019-07-17 17:22:42 -0500] [3201] [INFO] Booting worker with pid: 3201
+[2019-07-17 17:32:07 -0500] [2053] [INFO] Starting gunicorn 19.9.0
+[2019-07-17 17:32:07 -0500] [2053] [INFO] Listening at: http://127.0.0.1:4448 (2053)
+[2019-07-17 17:32:07 -0500] [2053] [INFO] Using worker: sync
+[2019-07-17 17:32:08 -0500] [2488] [INFO] Booting worker with pid: 2488
+[2019-07-18 13:49:37 -0500] [2053] [INFO] Handling signal: term
+[2019-07-18 13:49:37 -0500] [2488] [INFO] Worker exiting (pid: 2488)
+[2019-07-18 13:49:37 -0500] [2053] [INFO] Shutting down: Master
+[2019-07-18 13:49:40 -0500] [20238] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 13:49:40 -0500] [20238] [INFO] Listening at: http://127.0.0.1:4448 (20238)
+[2019-07-18 13:49:40 -0500] [20238] [INFO] Using worker: sync
+[2019-07-18 13:49:40 -0500] [20300] [INFO] Booting worker with pid: 20300
+[2019-07-18 13:49:55 -0500] [20238] [INFO] Handling signal: term
+[2019-07-18 13:49:55 -0500] [20300] [INFO] Worker exiting (pid: 20300)
+[2019-07-18 13:49:55 -0500] [20238] [INFO] Shutting down: Master
+[2019-07-18 13:49:58 -0500] [20704] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 13:49:58 -0500] [20704] [INFO] Listening at: http://127.0.0.1:4448 (20704)
+[2019-07-18 13:49:58 -0500] [20704] [INFO] Using worker: sync
+[2019-07-18 13:49:58 -0500] [20740] [INFO] Booting worker with pid: 20740
+[2019-07-18 20:16:58 -0500] [20704] [INFO] Handling signal: term
+[2019-07-18 20:16:58 -0500] [20740] [INFO] Worker exiting (pid: 20740)
+[2019-07-18 20:16:59 -0500] [20704] [INFO] Shutting down: Master
+[2019-07-18 20:17:01 -0500] [31264] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:17:01 -0500] [31264] [INFO] Listening at: http://127.0.0.1:4448 (31264)
+[2019-07-18 20:17:01 -0500] [31264] [INFO] Using worker: sync
+[2019-07-18 20:17:01 -0500] [31363] [INFO] Booting worker with pid: 31363
+[2019-07-18 20:19:28 -0500] [31264] [INFO] Handling signal: term
+[2019-07-18 20:19:28 -0500] [31363] [INFO] Worker exiting (pid: 31363)
+[2019-07-18 20:19:29 -0500] [31264] [INFO] Shutting down: Master
+[2019-07-18 20:19:31 -0500] [31475] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:19:31 -0500] [31475] [INFO] Listening at: http://127.0.0.1:4448 (31475)
+[2019-07-18 20:19:31 -0500] [31475] [INFO] Using worker: sync
+[2019-07-18 20:19:31 -0500] [31525] [INFO] Booting worker with pid: 31525
+[2019-07-18 20:56:45 -0500] [31475] [INFO] Handling signal: term
+[2019-07-18 20:56:45 -0500] [31525] [INFO] Worker exiting (pid: 31525)
+[2019-07-18 20:56:46 -0500] [31475] [INFO] Shutting down: Master
+[2019-07-18 20:56:48 -0500] [31800] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 20:56:48 -0500] [31800] [INFO] Listening at: http://127.0.0.1:4448 (31800)
+[2019-07-18 20:56:48 -0500] [31800] [INFO] Using worker: sync
+[2019-07-18 20:56:48 -0500] [31878] [INFO] Booting worker with pid: 31878
+[2019-07-18 21:02:01 -0500] [31800] [INFO] Handling signal: term
+[2019-07-18 21:02:01 -0500] [31878] [INFO] Worker exiting (pid: 31878)
+[2019-07-18 21:02:02 -0500] [31800] [INFO] Shutting down: Master
+[2019-07-18 21:02:05 -0500] [32039] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:02:05 -0500] [32039] [INFO] Listening at: http://127.0.0.1:4448 (32039)
+[2019-07-18 21:02:05 -0500] [32039] [INFO] Using worker: sync
+[2019-07-18 21:02:05 -0500] [32108] [INFO] Booting worker with pid: 32108
+[2019-07-18 21:36:36 -0500] [32039] [INFO] Handling signal: term
+[2019-07-18 21:36:36 -0500] [32108] [INFO] Worker exiting (pid: 32108)
+[2019-07-18 21:36:37 -0500] [32039] [INFO] Shutting down: Master
+[2019-07-18 21:36:38 -0500] [32294] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:36:38 -0500] [32294] [INFO] Listening at: http://127.0.0.1:4448 (32294)
+[2019-07-18 21:36:38 -0500] [32294] [INFO] Using worker: sync
+[2019-07-18 21:36:38 -0500] [32377] [INFO] Booting worker with pid: 32377
+[2019-07-18 21:41:47 -0500] [32294] [INFO] Handling signal: term
+[2019-07-18 21:41:47 -0500] [32377] [INFO] Worker exiting (pid: 32377)
+[2019-07-18 21:41:48 -0500] [32294] [INFO] Shutting down: Master
+[2019-07-18 21:41:50 -0500] [32502] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:41:50 -0500] [32502] [INFO] Listening at: http://127.0.0.1:4448 (32502)
+[2019-07-18 21:41:50 -0500] [32502] [INFO] Using worker: sync
+[2019-07-18 21:41:50 -0500] [32562] [INFO] Booting worker with pid: 32562
+[2019-07-18 21:47:01 -0500] [32502] [INFO] Handling signal: term
+[2019-07-18 21:47:01 -0500] [32562] [INFO] Worker exiting (pid: 32562)
+[2019-07-18 21:47:02 -0500] [32502] [INFO] Shutting down: Master
+[2019-07-18 21:47:04 -0500] [32763] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 21:47:04 -0500] [32763] [INFO] Listening at: http://127.0.0.1:4448 (32763)
+[2019-07-18 21:47:04 -0500] [32763] [INFO] Using worker: sync
+[2019-07-18 21:47:04 -0500] [364] [INFO] Booting worker with pid: 364
+[2019-07-18 22:12:36 -0500] [32763] [INFO] Handling signal: term
+[2019-07-18 22:12:36 -0500] [364] [INFO] Worker exiting (pid: 364)
+[2019-07-18 22:12:36 -0500] [32763] [INFO] Shutting down: Master
+[2019-07-18 22:12:39 -0500] [1096] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 22:12:39 -0500] [1096] [INFO] Listening at: http://127.0.0.1:4448 (1096)
+[2019-07-18 22:12:39 -0500] [1096] [INFO] Using worker: sync
+[2019-07-18 22:12:39 -0500] [1167] [INFO] Booting worker with pid: 1167
+[2019-07-18 22:13:43 -0500] [1096] [INFO] Handling signal: term
+[2019-07-18 22:13:43 -0500] [1167] [INFO] Worker exiting (pid: 1167)
+[2019-07-18 22:13:43 -0500] [1096] [INFO] Shutting down: Master
+[2019-07-18 22:13:46 -0500] [1326] [INFO] Starting gunicorn 19.9.0
+[2019-07-18 22:13:46 -0500] [1326] [INFO] Listening at: http://127.0.0.1:4448 (1326)
+[2019-07-18 22:13:46 -0500] [1326] [INFO] Using worker: sync
+[2019-07-18 22:13:46 -0500] [1365] [INFO] Booting worker with pid: 1365
+[2019-07-19 05:45:37 -0500] [1326] [CRITICAL] WORKER TIMEOUT (pid:1365)
+[2019-07-19 05:45:58 -0500] [3077] [INFO] Booting worker with pid: 3077
+[2019-07-19 07:35:50 -0500] [1326] [INFO] Handling signal: term
+[2019-07-19 07:35:50 -0500] [3077] [INFO] Worker exiting (pid: 3077)
+[2019-07-19 07:35:51 -0500] [1326] [INFO] Shutting down: Master
+[2019-07-19 07:35:54 -0500] [4243] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 07:35:54 -0500] [4243] [INFO] Listening at: http://127.0.0.1:4448 (4243)
+[2019-07-19 07:35:54 -0500] [4243] [INFO] Using worker: sync
+[2019-07-19 07:35:54 -0500] [4310] [INFO] Booting worker with pid: 4310
+[2019-07-19 07:36:53 -0500] [4243] [INFO] Handling signal: term
+[2019-07-19 07:36:53 -0500] [4310] [INFO] Worker exiting (pid: 4310)
+[2019-07-19 07:36:54 -0500] [4243] [INFO] Shutting down: Master
+[2019-07-19 07:36:55 -0500] [4501] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 07:36:55 -0500] [4501] [INFO] Listening at: http://127.0.0.1:4448 (4501)
+[2019-07-19 07:36:55 -0500] [4501] [INFO] Using worker: sync
+[2019-07-19 07:36:55 -0500] [4544] [INFO] Booting worker with pid: 4544
+[2019-07-19 08:05:30 -0500] [4501] [INFO] Handling signal: term
+[2019-07-19 08:05:30 -0500] [4544] [INFO] Worker exiting (pid: 4544)
+[2019-07-19 08:05:31 -0500] [4501] [INFO] Shutting down: Master
+[2019-07-19 08:05:34 -0500] [5356] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 08:05:34 -0500] [5356] [INFO] Listening at: http://127.0.0.1:4448 (5356)
+[2019-07-19 08:05:34 -0500] [5356] [INFO] Using worker: sync
+[2019-07-19 08:05:40 -0500] [5456] [INFO] Booting worker with pid: 5456
+[2019-07-19 14:07:00 -0500] [5356] [INFO] Handling signal: term
+[2019-07-19 14:07:00 -0500] [5456] [INFO] Worker exiting (pid: 5456)
+[2019-07-19 14:07:01 -0500] [5356] [INFO] Shutting down: Master
+[2019-07-19 14:07:02 -0500] [11449] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:07:02 -0500] [11449] [INFO] Listening at: http://127.0.0.1:4448 (11449)
+[2019-07-19 14:07:02 -0500] [11449] [INFO] Using worker: sync
+[2019-07-19 14:07:02 -0500] [11534] [INFO] Booting worker with pid: 11534
+[2019-07-19 14:19:19 -0500] [11449] [INFO] Handling signal: term
+[2019-07-19 14:19:19 -0500] [11534] [INFO] Worker exiting (pid: 11534)
+[2019-07-19 14:19:19 -0500] [11449] [INFO] Shutting down: Master
+[2019-07-19 14:19:24 -0500] [11868] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:19:24 -0500] [11868] [INFO] Listening at: http://127.0.0.1:4448 (11868)
+[2019-07-19 14:19:24 -0500] [11868] [INFO] Using worker: sync
+[2019-07-19 14:19:24 -0500] [11929] [INFO] Booting worker with pid: 11929
+[2019-07-19 14:45:21 -0500] [11868] [INFO] Handling signal: term
+[2019-07-19 14:45:21 -0500] [11929] [INFO] Worker exiting (pid: 11929)
+[2019-07-19 14:45:22 -0500] [11868] [INFO] Shutting down: Master
+[2019-07-19 14:45:24 -0500] [12560] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 14:45:24 -0500] [12560] [INFO] Listening at: http://127.0.0.1:4448 (12560)
+[2019-07-19 14:45:24 -0500] [12560] [INFO] Using worker: sync
+[2019-07-19 14:45:24 -0500] [12654] [INFO] Booting worker with pid: 12654
+[2019-07-19 15:17:20 -0500] [12560] [INFO] Handling signal: term
+[2019-07-19 15:17:20 -0500] [12654] [INFO] Worker exiting (pid: 12654)
+[2019-07-19 15:17:21 -0500] [12560] [INFO] Shutting down: Master
+[2019-07-19 15:17:23 -0500] [14259] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 15:17:23 -0500] [14259] [INFO] Listening at: http://127.0.0.1:4448 (14259)
+[2019-07-19 15:17:23 -0500] [14259] [INFO] Using worker: sync
+[2019-07-19 15:17:23 -0500] [14297] [INFO] Booting worker with pid: 14297
+[2019-07-19 15:49:07 -0500] [14259] [INFO] Handling signal: term
+[2019-07-19 15:49:07 -0500] [14297] [INFO] Worker exiting (pid: 14297)
+[2019-07-19 15:49:08 -0500] [14259] [INFO] Shutting down: Master
+[2019-07-19 15:49:10 -0500] [15770] [INFO] Starting gunicorn 19.9.0
+[2019-07-19 15:49:10 -0500] [15770] [INFO] Listening at: http://127.0.0.1:4448 (15770)
+[2019-07-19 15:49:10 -0500] [15770] [INFO] Using worker: sync
+[2019-07-19 15:49:10 -0500] [15832] [INFO] Booting worker with pid: 15832
+[2019-07-20 00:45:40 -0500] [15770] [CRITICAL] WORKER TIMEOUT (pid:15832)
+[2019-07-20 00:45:53 -0500] [24092] [INFO] Booting worker with pid: 24092
+[2019-07-20 00:50:41 -0500] [15770] [CRITICAL] WORKER TIMEOUT (pid:24092)
+[2019-07-20 00:50:50 -0500] [24166] [INFO] Booting worker with pid: 24166
+[2019-07-20 11:26:57 -0500] [2032] [INFO] Starting gunicorn 19.9.0
+[2019-07-20 11:26:57 -0500] [2032] [INFO] Listening at: http://127.0.0.1:4448 (2032)
+[2019-07-20 11:26:57 -0500] [2032] [INFO] Using worker: sync
+[2019-07-20 11:26:58 -0500] [2937] [INFO] Booting worker with pid: 2937
+[2019-07-20 11:27:28 -0500] [2032] [CRITICAL] WORKER TIMEOUT (pid:2937)
+[2019-07-20 11:27:28 -0500] [2937] [INFO] Worker exiting (pid: 2937)
+[2019-07-20 11:27:29 -0500] [3498] [INFO] Booting worker with pid: 3498
+[2019-07-20 11:30:51 -0500] [2032] [INFO] Handling signal: term
+[2019-07-20 11:30:51 -0500] [3498] [INFO] Worker exiting (pid: 3498)
+[2019-07-20 11:30:52 -0500] [2032] [INFO] Shutting down: Master
+[2019-07-20 11:30:54 -0500] [4541] [INFO] Starting gunicorn 19.9.0
+[2019-07-20 11:30:54 -0500] [4541] [INFO] Listening at: http://127.0.0.1:4448 (4541)
+[2019-07-20 11:30:54 -0500] [4541] [INFO] Using worker: sync
+[2019-07-20 11:30:54 -0500] [4615] [INFO] Booting worker with pid: 4615
+[2019-07-22 00:23:42 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:4615)
+[2019-07-22 00:23:46 -0500] [10284] [INFO] Booting worker with pid: 10284
+[2019-07-22 00:24:59 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10284)
+[2019-07-22 00:25:00 -0500] [10351] [INFO] Booting worker with pid: 10351
+[2019-07-22 00:26:50 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10351)
+[2019-07-22 00:27:27 -0500] [10429] [INFO] Booting worker with pid: 10429
+[2019-07-22 00:30:37 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10429)
+[2019-07-22 00:30:58 -0500] [10476] [INFO] Booting worker with pid: 10476
+[2019-07-22 00:40:40 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10476)
+[2019-07-22 00:40:48 -0500] [10542] [INFO] Booting worker with pid: 10542
+[2019-07-22 00:55:52 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10542)
+[2019-07-22 00:56:01 -0500] [10645] [INFO] Booting worker with pid: 10645
+[2019-07-22 00:57:48 -0500] [4541] [CRITICAL] WORKER TIMEOUT (pid:10645)
+[2019-07-22 00:58:04 -0500] [10705] [INFO] Booting worker with pid: 10705
+[2019-07-22 07:45:03 -0500] [2017] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 07:45:03 -0500] [2017] [INFO] Listening at: http://127.0.0.1:4448 (2017)
+[2019-07-22 07:45:03 -0500] [2017] [INFO] Using worker: sync
+[2019-07-22 07:45:06 -0500] [2283] [INFO] Booting worker with pid: 2283
+[2019-07-22 07:45:36 -0500] [2017] [CRITICAL] WORKER TIMEOUT (pid:2283)
+[2019-07-22 07:45:43 -0500] [2327] [INFO] Booting worker with pid: 2327
+[2019-07-22 07:46:13 -0500] [2017] [CRITICAL] WORKER TIMEOUT (pid:2327)
+[2019-07-22 07:46:14 -0500] [2327] [ERROR] Exception in worker process
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/kiero/production/services/.env/lib/python3.5/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/home/kiero/production/services/questions_and_answers/broco.py", line 2, in <module>
+    from routes.router import app
+  File "/home/kiero/production/services/questions_and_answers/routes/router.py", line 20, in <module>
+    from routes.add_route.rqa import get_all_answers
+  File "/home/kiero/production/services/questions_and_answers/routes/add_route/rqa.py", line 21, in <module>
+    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=204.141.52.148;DATABASE=DBKiero_Productos;UID=MachineBaseConnect3651;PWD=H1#KotS(xh5nF+tGv')
+SystemError: <built-in function connect> returned a result with an error set
+[2019-07-22 07:46:14 -0500] [2327] [INFO] Worker exiting (pid: 2327)
+[2019-07-22 07:46:14 -0500] [2017] [INFO] Shutting down: Master
+[2019-07-22 07:46:14 -0500] [2017] [INFO] Reason: Worker failed to boot.
+[2019-07-22 07:46:16 -0500] [3122] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 07:46:16 -0500] [3122] [INFO] Listening at: http://127.0.0.1:4448 (3122)
+[2019-07-22 07:46:16 -0500] [3122] [INFO] Using worker: sync
+[2019-07-22 07:46:16 -0500] [3135] [INFO] Booting worker with pid: 3135
+[2019-07-22 10:06:09 -0500] [3122] [INFO] Handling signal: term
+[2019-07-22 10:06:09 -0500] [3135] [INFO] Worker exiting (pid: 3135)
+[2019-07-22 10:06:14 -0500] [3122] [INFO] Shutting down: Master
+[2019-07-22 10:07:26 -0500] [9314] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 10:07:26 -0500] [9314] [INFO] Listening at: http://127.0.0.1:4448 (9314)
+[2019-07-22 10:07:26 -0500] [9314] [INFO] Using worker: sync
+[2019-07-22 10:07:27 -0500] [9414] [INFO] Booting worker with pid: 9414
+[2019-07-22 17:12:34 -0500] [9314] [INFO] Handling signal: term
+[2019-07-22 17:12:34 -0500] [9414] [INFO] Worker exiting (pid: 9414)
+[2019-07-22 17:12:35 -0500] [9314] [INFO] Shutting down: Master
+[2019-07-22 17:12:36 -0500] [28838] [INFO] Starting gunicorn 19.9.0
+[2019-07-22 17:12:36 -0500] [28838] [INFO] Listening at: http://127.0.0.1:4448 (28838)
+[2019-07-22 17:12:36 -0500] [28838] [INFO] Using worker: sync
+[2019-07-22 17:12:36 -0500] [28876] [INFO] Booting worker with pid: 28876
+[2019-07-23 00:05:45 -0500] [28838] [CRITICAL] WORKER TIMEOUT (pid:28876)
+[2019-07-23 00:06:01 -0500] [32717] [INFO] Booting worker with pid: 32717
+[2019-07-23 07:54:32 -0500] [2162] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 07:54:32 -0500] [2162] [INFO] Listening at: http://127.0.0.1:4448 (2162)
+[2019-07-23 07:54:32 -0500] [2162] [INFO] Using worker: sync
+[2019-07-23 07:54:32 -0500] [2558] [INFO] Booting worker with pid: 2558
+[2019-07-23 07:55:02 -0500] [2162] [CRITICAL] WORKER TIMEOUT (pid:2558)
+[2019-07-23 07:55:52 -0500] [3196] [INFO] Booting worker with pid: 3196
+[2019-07-23 10:20:24 -0500] [2162] [INFO] Handling signal: term
+[2019-07-23 10:20:24 -0500] [3196] [INFO] Worker exiting (pid: 3196)
+[2019-07-23 10:20:26 -0500] [2162] [INFO] Shutting down: Master
+[2019-07-23 10:20:43 -0500] [9726] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 10:20:43 -0500] [9726] [INFO] Listening at: http://127.0.0.1:4448 (9726)
+[2019-07-23 10:20:43 -0500] [9726] [INFO] Using worker: sync
+[2019-07-23 10:20:43 -0500] [9785] [INFO] Booting worker with pid: 9785
+[2019-07-23 14:34:03 -0500] [9726] [INFO] Handling signal: term
+[2019-07-23 14:34:03 -0500] [9785] [INFO] Worker exiting (pid: 9785)
+[2019-07-23 14:34:03 -0500] [9726] [INFO] Shutting down: Master
+[2019-07-23 14:34:05 -0500] [15860] [INFO] Starting gunicorn 19.9.0
+[2019-07-23 14:34:05 -0500] [15860] [INFO] Listening at: http://127.0.0.1:4448 (15860)
+[2019-07-23 14:34:05 -0500] [15860] [INFO] Using worker: sync
+[2019-07-23 14:34:05 -0500] [15907] [INFO] Booting worker with pid: 15907
+[2019-07-24 00:05:43 -0500] [15860] [CRITICAL] WORKER TIMEOUT (pid:15907)
+[2019-07-24 00:05:46 -0500] [27587] [INFO] Booting worker with pid: 27587
+[2019-07-24 00:15:41 -0500] [15860] [CRITICAL] WORKER TIMEOUT (pid:27587)
+[2019-07-24 00:15:55 -0500] [27709] [INFO] Booting worker with pid: 27709
+[2019-07-24 07:03:51 -0500] [2271] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 07:03:51 -0500] [2271] [INFO] Listening at: http://127.0.0.1:4448 (2271)
+[2019-07-24 07:03:51 -0500] [2271] [INFO] Using worker: sync
+[2019-07-24 07:03:51 -0500] [2625] [INFO] Booting worker with pid: 2625
+[2019-07-24 07:04:21 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:2625)
+[2019-07-24 07:04:21 -0500] [2625] [INFO] Worker exiting (pid: 2625)
+[2019-07-24 07:04:22 -0500] [3246] [INFO] Booting worker with pid: 3246
+[2019-07-24 07:04:52 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3246)
+[2019-07-24 07:04:52 -0500] [3246] [INFO] Worker exiting (pid: 3246)
+[2019-07-24 07:04:52 -0500] [3405] [INFO] Booting worker with pid: 3405
+[2019-07-24 07:05:22 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3405)
+[2019-07-24 07:05:33 -0500] [3479] [INFO] Booting worker with pid: 3479
+[2019-07-24 07:06:04 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3479)
+[2019-07-24 07:06:05 -0500] [3652] [INFO] Booting worker with pid: 3652
+[2019-07-24 07:06:35 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3652)
+[2019-07-24 07:06:37 -0500] [3729] [INFO] Booting worker with pid: 3729
+[2019-07-24 07:07:07 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3729)
+[2019-07-24 07:07:07 -0500] [3729] [INFO] Worker exiting (pid: 3729)
+[2019-07-24 07:07:08 -0500] [3865] [INFO] Booting worker with pid: 3865
+[2019-07-24 07:07:38 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3865)
+[2019-07-24 07:07:53 -0500] [3984] [INFO] Booting worker with pid: 3984
+[2019-07-24 07:08:23 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:3984)
+[2019-07-24 07:08:24 -0500] [4063] [INFO] Booting worker with pid: 4063
+[2019-07-24 07:08:54 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4063)
+[2019-07-24 07:08:56 -0500] [4225] [INFO] Booting worker with pid: 4225
+[2019-07-24 07:09:26 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4225)
+[2019-07-24 07:09:27 -0500] [4225] [INFO] Worker exiting (pid: 4225)
+[2019-07-24 07:09:27 -0500] [4341] [INFO] Booting worker with pid: 4341
+[2019-07-24 07:09:57 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4341)
+[2019-07-24 07:09:59 -0500] [4399] [INFO] Booting worker with pid: 4399
+[2019-07-24 07:10:29 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4399)
+[2019-07-24 07:10:31 -0500] [4440] [INFO] Booting worker with pid: 4440
+[2019-07-24 07:11:01 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4440)
+[2019-07-24 07:11:02 -0500] [4508] [INFO] Booting worker with pid: 4508
+[2019-07-24 07:11:32 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4508)
+[2019-07-24 07:11:33 -0500] [4591] [INFO] Booting worker with pid: 4591
+[2019-07-24 07:12:03 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4591)
+[2019-07-24 07:12:08 -0500] [4655] [INFO] Booting worker with pid: 4655
+[2019-07-24 07:12:38 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4655)
+[2019-07-24 07:12:39 -0500] [4843] [INFO] Booting worker with pid: 4843
+[2019-07-24 07:13:09 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4843)
+[2019-07-24 07:13:10 -0500] [4843] [INFO] Worker exiting (pid: 4843)
+[2019-07-24 07:13:10 -0500] [4981] [INFO] Booting worker with pid: 4981
+[2019-07-24 07:13:40 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:4981)
+[2019-07-24 07:13:45 -0500] [5057] [INFO] Booting worker with pid: 5057
+[2019-07-24 07:14:15 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:5057)
+[2019-07-24 07:14:19 -0500] [5222] [INFO] Booting worker with pid: 5222
+[2019-07-24 07:14:49 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:5222)
+[2019-07-24 07:16:14 -0500] [5455] [INFO] Booting worker with pid: 5455
+[2019-07-24 07:16:44 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:5455)
+[2019-07-24 07:16:46 -0500] [5730] [INFO] Booting worker with pid: 5730
+[2019-07-24 07:25:35 -0500] [2271] [CRITICAL] WORKER TIMEOUT (pid:5730)
+[2019-07-24 07:25:43 -0500] [6582] [INFO] Booting worker with pid: 6582
+[2019-07-24 07:57:13 -0500] [2142] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 07:57:13 -0500] [2142] [INFO] Listening at: http://127.0.0.1:4448 (2142)
+[2019-07-24 07:57:13 -0500] [2142] [INFO] Using worker: sync
+[2019-07-24 07:57:13 -0500] [2311] [INFO] Booting worker with pid: 2311
+[2019-07-24 07:57:43 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:2311)
+[2019-07-24 07:57:46 -0500] [2427] [INFO] Booting worker with pid: 2427
+[2019-07-24 07:58:16 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:2427)
+[2019-07-24 07:58:23 -0500] [2578] [INFO] Booting worker with pid: 2578
+[2019-07-24 07:58:53 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:2578)
+[2019-07-24 07:58:56 -0500] [3116] [INFO] Booting worker with pid: 3116
+[2019-07-24 07:59:26 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:3116)
+[2019-07-24 07:59:27 -0500] [3116] [INFO] Worker exiting (pid: 3116)
+[2019-07-24 07:59:33 -0500] [3341] [INFO] Booting worker with pid: 3341
+[2019-07-24 08:00:03 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:3341)
+[2019-07-24 08:00:04 -0500] [3407] [INFO] Booting worker with pid: 3407
+[2019-07-24 08:00:34 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:3407)
+[2019-07-24 08:00:48 -0500] [3484] [INFO] Booting worker with pid: 3484
+[2019-07-24 08:01:18 -0500] [2142] [CRITICAL] WORKER TIMEOUT (pid:3484)
+[2019-07-24 08:01:18 -0500] [3484] [INFO] Worker exiting (pid: 3484)
+[2019-07-24 08:01:19 -0500] [3612] [INFO] Booting worker with pid: 3612
+[2019-07-24 08:47:29 -0500] [2641] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 08:47:29 -0500] [2641] [INFO] Listening at: http://127.0.0.1:4448 (2641)
+[2019-07-24 08:47:29 -0500] [2641] [INFO] Using worker: sync
+[2019-07-24 08:47:29 -0500] [2974] [INFO] Booting worker with pid: 2974
+[2019-07-24 08:47:59 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:2974)
+[2019-07-24 08:48:00 -0500] [2974] [INFO] Worker exiting (pid: 2974)
+[2019-07-24 08:48:00 -0500] [3036] [INFO] Booting worker with pid: 3036
+[2019-07-24 08:48:30 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3036)
+[2019-07-24 08:48:31 -0500] [3036] [INFO] Worker exiting (pid: 3036)
+[2019-07-24 08:48:33 -0500] [3316] [INFO] Booting worker with pid: 3316
+[2019-07-24 08:49:04 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3316)
+[2019-07-24 08:49:05 -0500] [3499] [INFO] Booting worker with pid: 3499
+[2019-07-24 08:49:35 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3499)
+[2019-07-24 08:49:36 -0500] [3611] [INFO] Booting worker with pid: 3611
+[2019-07-24 08:50:06 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3611)
+[2019-07-24 08:50:09 -0500] [3713] [INFO] Booting worker with pid: 3713
+[2019-07-24 08:50:39 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3713)
+[2019-07-24 08:50:46 -0500] [3800] [INFO] Booting worker with pid: 3800
+[2019-07-24 08:51:16 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3800)
+[2019-07-24 08:51:33 -0500] [3916] [INFO] Booting worker with pid: 3916
+[2019-07-24 08:52:03 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:3916)
+[2019-07-24 08:52:04 -0500] [3916] [INFO] Worker exiting (pid: 3916)
+[2019-07-24 08:52:04 -0500] [4086] [INFO] Booting worker with pid: 4086
+[2019-07-24 08:52:34 -0500] [2641] [CRITICAL] WORKER TIMEOUT (pid:4086)
+[2019-07-24 08:52:34 -0500] [4086] [INFO] Worker exiting (pid: 4086)
+[2019-07-24 08:52:34 -0500] [4240] [INFO] Booting worker with pid: 4240
+[2019-07-24 08:56:23 -0500] [2641] [INFO] Handling signal: term
+[2019-07-24 08:56:23 -0500] [4240] [INFO] Worker exiting (pid: 4240)
+[2019-07-24 08:56:24 -0500] [2641] [INFO] Shutting down: Master
+[2019-07-24 08:56:43 -0500] [5025] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 08:56:43 -0500] [5025] [INFO] Listening at: http://127.0.0.1:4448 (5025)
+[2019-07-24 08:56:43 -0500] [5025] [INFO] Using worker: sync
+[2019-07-24 08:56:43 -0500] [5067] [INFO] Booting worker with pid: 5067
+[2019-07-24 10:00:48 -0500] [5025] [CRITICAL] WORKER TIMEOUT (pid:5067)
+[2019-07-24 10:00:48 -0500] [5067] [INFO] Worker exiting (pid: 5067)
+[2019-07-24 10:00:49 -0500] [10683] [INFO] Booting worker with pid: 10683
+[2019-07-24 10:15:38 -0500] [5025] [CRITICAL] WORKER TIMEOUT (pid:10683)
+[2019-07-24 10:15:46 -0500] [11815] [INFO] Booting worker with pid: 11815
+[2019-07-24 12:41:20 -0500] [2595] [INFO] Starting gunicorn 19.9.0
+[2019-07-24 12:41:20 -0500] [2595] [INFO] Listening at: http://127.0.0.1:4448 (2595)
+[2019-07-24 12:41:20 -0500] [2595] [INFO] Using worker: sync
+[2019-07-24 12:41:20 -0500] [2887] [INFO] Booting worker with pid: 2887
+[2019-07-24 12:41:50 -0500] [2595] [CRITICAL] WORKER TIMEOUT (pid:2887)
+[2019-07-24 12:41:50 -0500] [2887] [INFO] Worker exiting (pid: 2887)
+[2019-07-24 12:41:52 -0500] [3065] [INFO] Booting worker with pid: 3065
+[2019-07-24 12:42:22 -0500] [2595] [CRITICAL] WORKER TIMEOUT (pid:3065)
+[2019-07-24 12:42:23 -0500] [3065] [INFO] Worker exiting (pid: 3065)
+[2019-07-24 12:42:23 -0500] [3696] [INFO] Booting worker with pid: 3696
+[2019-07-24 12:42:53 -0500] [2595] [CRITICAL] WORKER TIMEOUT (pid:3696)
+[2019-07-24 12:42:54 -0500] [3785] [INFO] Booting worker with pid: 3785
+[2019-07-25 14:48:54 -0500] [2595] [INFO] Handling signal: term
+[2019-07-25 14:48:55 -0500] [3785] [INFO] Worker exiting (pid: 3785)
+[2019-07-25 14:48:55 -0500] [2595] [INFO] Shutting down: Master
+[2019-07-25 14:48:57 -0500] [28871] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:48:57 -0500] [28871] [INFO] Listening at: http://127.0.0.1:4448 (28871)
+[2019-07-25 14:48:57 -0500] [28871] [INFO] Using worker: sync
+[2019-07-25 14:48:57 -0500] [28915] [INFO] Booting worker with pid: 28915
+[2019-07-25 14:50:48 -0500] [28871] [INFO] Handling signal: term
+[2019-07-25 14:50:48 -0500] [28915] [INFO] Worker exiting (pid: 28915)
+[2019-07-25 14:50:49 -0500] [28871] [INFO] Shutting down: Master
+[2019-07-25 14:50:51 -0500] [29244] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:50:51 -0500] [29244] [INFO] Listening at: http://127.0.0.1:4448 (29244)
+[2019-07-25 14:50:51 -0500] [29244] [INFO] Using worker: sync
+[2019-07-25 14:50:51 -0500] [29291] [INFO] Booting worker with pid: 29291
+[2019-07-25 14:52:02 -0500] [29244] [INFO] Handling signal: term
+[2019-07-25 14:52:02 -0500] [29291] [INFO] Worker exiting (pid: 29291)
+[2019-07-25 14:52:02 -0500] [29244] [INFO] Shutting down: Master
+[2019-07-25 14:52:05 -0500] [29572] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 14:52:05 -0500] [29572] [INFO] Listening at: http://127.0.0.1:4448 (29572)
+[2019-07-25 14:52:05 -0500] [29572] [INFO] Using worker: sync
+[2019-07-25 14:52:05 -0500] [29608] [INFO] Booting worker with pid: 29608
+[2019-07-25 15:06:34 -0500] [29572] [INFO] Handling signal: term
+[2019-07-25 15:06:34 -0500] [29608] [INFO] Worker exiting (pid: 29608)
+[2019-07-25 15:06:35 -0500] [29572] [INFO] Shutting down: Master
+[2019-07-25 15:06:37 -0500] [32373] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 15:06:37 -0500] [32373] [INFO] Listening at: http://127.0.0.1:4448 (32373)
+[2019-07-25 15:06:37 -0500] [32373] [INFO] Using worker: sync
+[2019-07-25 15:06:37 -0500] [32404] [INFO] Booting worker with pid: 32404
+[2019-07-25 16:30:43 -0500] [32373] [INFO] Handling signal: term
+[2019-07-25 16:30:43 -0500] [32404] [INFO] Worker exiting (pid: 32404)
+[2019-07-25 16:30:44 -0500] [32373] [INFO] Shutting down: Master
+[2019-07-25 16:30:48 -0500] [3868] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:30:48 -0500] [3868] [INFO] Listening at: http://127.0.0.1:4448 (3868)
+[2019-07-25 16:30:48 -0500] [3868] [INFO] Using worker: sync
+[2019-07-25 16:30:48 -0500] [3966] [INFO] Booting worker with pid: 3966
+[2019-07-25 16:33:14 -0500] [3868] [INFO] Handling signal: term
+[2019-07-25 16:33:14 -0500] [3966] [INFO] Worker exiting (pid: 3966)
+[2019-07-25 16:33:15 -0500] [3868] [INFO] Shutting down: Master
+[2019-07-25 16:33:17 -0500] [4141] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:33:17 -0500] [4141] [INFO] Listening at: http://127.0.0.1:4448 (4141)
+[2019-07-25 16:33:17 -0500] [4141] [INFO] Using worker: sync
+[2019-07-25 16:33:17 -0500] [4185] [INFO] Booting worker with pid: 4185
+[2019-07-25 16:36:26 -0500] [4141] [INFO] Handling signal: term
+[2019-07-25 16:36:26 -0500] [4185] [INFO] Worker exiting (pid: 4185)
+[2019-07-25 16:36:27 -0500] [4141] [INFO] Shutting down: Master
+[2019-07-25 16:36:29 -0500] [4461] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:36:29 -0500] [4461] [INFO] Listening at: http://127.0.0.1:4448 (4461)
+[2019-07-25 16:36:29 -0500] [4461] [INFO] Using worker: sync
+[2019-07-25 16:36:29 -0500] [4487] [INFO] Booting worker with pid: 4487
+[2019-07-25 16:37:40 -0500] [4461] [INFO] Handling signal: term
+[2019-07-25 16:37:40 -0500] [4487] [INFO] Worker exiting (pid: 4487)
+[2019-07-25 16:37:41 -0500] [4461] [INFO] Shutting down: Master
+[2019-07-25 16:37:43 -0500] [4637] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:37:43 -0500] [4637] [INFO] Listening at: http://127.0.0.1:4448 (4637)
+[2019-07-25 16:37:43 -0500] [4637] [INFO] Using worker: sync
+[2019-07-25 16:37:43 -0500] [4688] [INFO] Booting worker with pid: 4688
+[2019-07-25 16:42:11 -0500] [4637] [INFO] Handling signal: term
+[2019-07-25 16:42:11 -0500] [4688] [INFO] Worker exiting (pid: 4688)
+[2019-07-25 16:42:12 -0500] [4637] [INFO] Shutting down: Master
+[2019-07-25 16:42:16 -0500] [4966] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:42:16 -0500] [4966] [INFO] Listening at: http://127.0.0.1:4448 (4966)
+[2019-07-25 16:42:16 -0500] [4966] [INFO] Using worker: sync
+[2019-07-25 16:42:16 -0500] [5047] [INFO] Booting worker with pid: 5047
+[2019-07-25 16:43:42 -0500] [4966] [INFO] Handling signal: term
+[2019-07-25 16:43:42 -0500] [5047] [INFO] Worker exiting (pid: 5047)
+[2019-07-25 16:43:43 -0500] [4966] [INFO] Shutting down: Master
+[2019-07-25 16:43:45 -0500] [5158] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:43:45 -0500] [5158] [INFO] Listening at: http://127.0.0.1:4448 (5158)
+[2019-07-25 16:43:45 -0500] [5158] [INFO] Using worker: sync
+[2019-07-25 16:43:45 -0500] [5214] [INFO] Booting worker with pid: 5214
+[2019-07-25 16:46:05 -0500] [5158] [INFO] Handling signal: term
+[2019-07-25 16:46:05 -0500] [5214] [INFO] Worker exiting (pid: 5214)
+[2019-07-25 16:46:06 -0500] [5158] [INFO] Shutting down: Master
+[2019-07-25 16:46:08 -0500] [5345] [INFO] Starting gunicorn 19.9.0
+[2019-07-25 16:46:08 -0500] [5345] [INFO] Listening at: http://127.0.0.1:4448 (5345)
+[2019-07-25 16:46:08 -0500] [5345] [INFO] Using worker: sync
+[2019-07-25 16:46:08 -0500] [5393] [INFO] Booting worker with pid: 5393
+[2019-07-26 11:56:27 -0500] [2313] [INFO] Starting gunicorn 19.9.0
+[2019-07-26 11:56:27 -0500] [2313] [INFO] Listening at: http://127.0.0.1:4448 (2313)
+[2019-07-26 11:56:27 -0500] [2313] [INFO] Using worker: sync
+[2019-07-26 11:56:27 -0500] [3030] [INFO] Booting worker with pid: 3030
+[2019-07-26 11:56:57 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3030)
+[2019-07-26 11:56:58 -0500] [3059] [INFO] Booting worker with pid: 3059
+[2019-07-26 11:57:29 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3059)
+[2019-07-26 11:57:29 -0500] [3059] [INFO] Worker exiting (pid: 3059)
+[2019-07-26 11:57:29 -0500] [3112] [INFO] Booting worker with pid: 3112
+[2019-07-26 11:57:59 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3112)
+[2019-07-26 11:58:10 -0500] [3200] [INFO] Booting worker with pid: 3200
+[2019-07-26 11:58:40 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3200)
+[2019-07-26 11:58:40 -0500] [3200] [INFO] Worker exiting (pid: 3200)
+[2019-07-26 11:58:40 -0500] [3243] [INFO] Booting worker with pid: 3243
+[2019-07-26 11:59:10 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3243)
+[2019-07-26 11:59:11 -0500] [3772] [INFO] Booting worker with pid: 3772
+[2019-07-26 11:59:41 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3772)
+[2019-07-26 11:59:45 -0500] [3873] [INFO] Booting worker with pid: 3873
+[2019-07-26 12:00:16 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3873)
+[2019-07-26 12:00:17 -0500] [3942] [INFO] Booting worker with pid: 3942
+[2019-07-26 12:00:47 -0500] [2313] [CRITICAL] WORKER TIMEOUT (pid:3942)
+[2019-07-26 12:00:48 -0500] [3991] [INFO] Booting worker with pid: 3991

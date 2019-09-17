@@ -1,0 +1,42 @@
+#Modulos relacionados con flask
+from flask import Flask, render_template, request, url_for, Response,Request
+from flask_bootstrap import Bootstrap
+from flask_restful import Resource, Api,reqparse
+from flask_jwt import JWT,jwt_required
+from flask_cors import CORS,cross_origin
+import os
+
+#Clases modulos
+template_dir = os.path.abspath('public')
+app = Flask(__name__, template_folder=template_dir)
+#Configuraciones iniciales
+Bootstrap(app)
+api = Api(app)
+resource = Resource
+req = request
+response = Response
+reqpar = reqparse
+cors = CORS(app, resources={r"/*": {"origins": "*","headers":"X-Custom-Header"}})
+ 
+#Importando todas las clases de rutas y aniadendolas
+from routes.add_route.r_connectionDevice import login_Device
+from routes.add_route.return_video import Return_Video
+
+#       ----    RUTAS DEL PROYECTO  ----        #
+api.add_resource(login_Device,'/Login_Device') 
+api.add_resource(Return_Video,'/Video') 
+#       ----    FIN DE LAS RUTAS PROYECTO  ----        #
+
+@app.route('/', methods=['GET', 'POST'])
+def inicio(): 
+    if request.method == 'POST':
+        return '¿que estas buscando?'
+    else:
+        return render_template("index.html") 
+
+@app.errorhandler(404)
+def page_not_found(error):
+    if request.method == 'POST':
+        return 'Error'
+    else:
+        return render_template("error.html"), 404

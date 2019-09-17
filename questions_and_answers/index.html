@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>NameError: name 'usuario_id' is not defined // Werkzeug Debugger</title>
+        <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css" type="text/css">
+        <!-- We need to make sure this has a favicon so that the debugger does not by
+         accident trigger a request to /favicon.ico which might change the application
+         state. -->
+        <link rel="shortcut icon" href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+        <script type="text/javascript" src="?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js"></script>
+        <script type="text/javascript" src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+        <script type="text/javascript">
+      var TRACEBACK = 139813135032216,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          SECRET = "ErQagFEWJwBm6St0Qzow";
+    </script>
+    </head>
+    <body>
+        <div class="debugger">
+            <h1>builtins.NameError</h1>
+            <div class="detail">
+                <p class="errormsg">NameError: name 'usuario_id' is not defined</p>
+            </div>
+            <h2 class="traceback">Traceback 
+                <em>(most recent call last)</em>
+            </h2>
+            <div class="traceback">
+                <ul>
+                    <li>
+                        <div class="frame" id="frame-139813113119352">
+                            <h4>File 
+                                <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                <em class="line">1836</em>,
+      in
+                                <code class="function">__call__</code>
+                            </h4>
+                            <pre>return self.wsgi_app(environ, start_response)</pre>
+                        </div>
+                        <li>
+                            <div class="frame" id="frame-139813113120248">
+                                <h4>File 
+                                    <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                    <em class="line">1820</em>,
+      in
+                                    <code class="function">wsgi_app</code>
+                                </h4>
+                                <pre>response = self.make_response(self.handle_exception(e))</pre>
+                            </div>
+                            <li>
+                                <div class="frame" id="frame-139813113121032">
+                                    <h4>File 
+                                        <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py"</cite>,
+      line
+                                        <em class="line">161</em>,
+      in
+                                        <code class="function">wrapped_function</code>
+                                    </h4>
+                                    <pre>return cors_after_request(app.make_response(f(*args, **kwargs)))</pre>
+                                </div>
+                                <li>
+                                    <div class="frame" id="frame-139813113119968">
+                                        <h4>File 
+                                            <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py"</cite>,
+      line
+                                            <em class="line">269</em>,
+      in
+                                            <code class="function">error_router</code>
+                                        </h4>
+                                        <pre>return original_handler(e)</pre>
+                                    </div>
+                                    <li>
+                                        <div class="frame" id="frame-139813113120360">
+                                            <h4>File 
+                                                <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                <em class="line">1403</em>,
+      in
+                                                <code class="function">handle_exception</code>
+                                            </h4>
+                                            <pre>reraise(exc_type, exc_value, tb)</pre>
+                                        </div>
+                                        <li>
+                                            <div class="frame" id="frame-139813113121928">
+                                                <h4>File 
+                                                    <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/_compat.py"</cite>,
+      line
+                                                    <em class="line">32</em>,
+      in
+                                                    <code class="function">reraise</code>
+                                                </h4>
+                                                <pre>raise value.with_traceback(tb)</pre>
+                                            </div>
+                                            <li>
+                                                <div class="frame" id="frame-139813113120528">
+                                                    <h4>File 
+                                                        <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                        <em class="line">1817</em>,
+      in
+                                                        <code class="function">wsgi_app</code>
+                                                    </h4>
+                                                    <pre>response = self.full_dispatch_request()</pre>
+                                                </div>
+                                                <li>
+                                                    <div class="frame" id="frame-139813113120080">
+                                                        <h4>File 
+                                                            <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                            <em class="line">1477</em>,
+      in
+                                                            <code class="function">full_dispatch_request</code>
+                                                        </h4>
+                                                        <pre>rv = self.handle_user_exception(e)</pre>
+                                                    </div>
+                                                    <li>
+                                                        <div class="frame" id="frame-139813113121256">
+                                                            <h4>File 
+                                                                <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py"</cite>,
+      line
+                                                                <em class="line">161</em>,
+      in
+                                                                <code class="function">wrapped_function</code>
+                                                            </h4>
+                                                            <pre>return cors_after_request(app.make_response(f(*args, **kwargs)))</pre>
+                                                        </div>
+                                                        <li>
+                                                            <div class="frame" id="frame-139813113122544">
+                                                                <h4>File 
+                                                                    <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py"</cite>,
+      line
+                                                                    <em class="line">269</em>,
+      in
+                                                                    <code class="function">error_router</code>
+                                                                </h4>
+                                                                <pre>return original_handler(e)</pre>
+                                                            </div>
+                                                            <li>
+                                                                <div class="frame" id="frame-139813113120472">
+                                                                    <h4>File 
+                                                                        <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                                        <em class="line">1381</em>,
+      in
+                                                                        <code class="function">handle_user_exception</code>
+                                                                    </h4>
+                                                                    <pre>reraise(exc_type, exc_value, tb)</pre>
+                                                                </div>
+                                                                <li>
+                                                                    <div class="frame" id="frame-139813113120024">
+                                                                        <h4>File 
+                                                                            <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/_compat.py"</cite>,
+      line
+                                                                            <em class="line">32</em>,
+      in
+                                                                            <code class="function">reraise</code>
+                                                                        </h4>
+                                                                        <pre>raise value.with_traceback(tb)</pre>
+                                                                    </div>
+                                                                    <li>
+                                                                        <div class="frame" id="frame-139813113121480">
+                                                                            <h4>File 
+                                                                                <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                                                <em class="line">1475</em>,
+      in
+                                                                                <code class="function">full_dispatch_request</code>
+                                                                            </h4>
+                                                                            <pre>rv = self.dispatch_request()</pre>
+                                                                        </div>
+                                                                        <li>
+                                                                            <div class="frame" id="frame-139813113121872">
+                                                                                <h4>File 
+                                                                                    <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py"</cite>,
+      line
+                                                                                    <em class="line">1461</em>,
+      in
+                                                                                    <code class="function">dispatch_request</code>
+                                                                                </h4>
+                                                                                <pre>return self.view_functions[rule.endpoint](**req.view_args)</pre>
+                                                                            </div>
+                                                                            <li>
+                                                                                <div class="frame" id="frame-139813113120304">
+                                                                                    <h4>File 
+                                                                                        <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py"</cite>,
+      line
+                                                                                        <em class="line">458</em>,
+      in
+                                                                                        <code class="function">wrapper</code>
+                                                                                    </h4>
+                                                                                    <pre>resp = resource(*args, **kwargs)</pre>
+                                                                                </div>
+                                                                                <li>
+                                                                                    <div class="frame" id="frame-139813113119912">
+                                                                                        <h4>File 
+                                                                                            <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask/views.py"</cite>,
+      line
+                                                                                            <em class="line">84</em>,
+      in
+                                                                                            <code class="function">view</code>
+                                                                                        </h4>
+                                                                                        <pre>return self.dispatch_request(*args, **kwargs)</pre>
+                                                                                    </div>
+                                                                                    <li>
+                                                                                        <div class="frame" id="frame-139813113120192">
+                                                                                            <h4>File 
+                                                                                                <cite class="filename">"/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py"</cite>,
+      line
+                                                                                                <em class="line">573</em>,
+      in
+                                                                                                <code class="function">dispatch_request</code>
+                                                                                            </h4>
+                                                                                            <pre>resp = meth(*args, **kwargs)</pre>
+                                                                                        </div>
+                                                                                        <li>
+                                                                                            <div class="frame" id="frame-139813113121368">
+                                                                                                <h4>File 
+                                                                                                    <cite class="filename">"/home/root-33/Documentos/microservices/nuevos/usuarios/routes/add_route/rusuario.py"</cite>,
+      line
+                                                                                                    <em class="line">37</em>,
+      in
+                                                                                                    <code class="function">post</code>
+                                                                                                </h4>
+                                                                                                <pre>s_usuario = sGet_Usuario(usuario_id=usuario_id) # se llaman a los servicios</pre>
+                                                                                            </div>
+                                                                                        </ul>
+                                                                                        <blockquote>NameError: name 'usuario_id' is not defined</blockquote>
+                                                                                    </div>
+                                                                                    <div class="plain">
+                                                                                        <form action="/?__debugger__=yes&amp;cmd=paste" method="post">
+                                                                                            <p>
+                                                                                                <input type="hidden" name="language" value="pytb">
+      This is the Copy/Paste friendly version of the traceback.  
+                                                                                                <span
+      class="pastemessage">You can also paste this traceback into
+      a 
+                                                                                                    <a href="https://gist.github.com/">gist</a>:
+                                                                                                    <input type="submit" value="create paste">
+                                                                                                </span>
+                                                                                            </p>
+                                                                                            <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1836, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1820, in wsgi_app
+    response = self.make_response(self.handle_exception(e))
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 269, in error_router
+    return original_handler(e)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1403, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 269, in error_router
+    return original_handler(e)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/_compat.py", line 32, in reraise
+    raise value.with_traceback(tb)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 458, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/root-33/anaconda3/lib/python3.7/site-packages/flask_restful/__init__.py", line 573, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/root-33/Documentos/microservices/nuevos/usuarios/routes/add_route/rusuario.py", line 37, in post
+    s_usuario = sGet_Usuario(usuario_id=usuario_id) # se llaman a los servicios
+NameError: name 'usuario_id' is not defined</textarea>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                    <div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  
+                                                                                        <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+                                                                                    </div>
+                                                                                    <div class="footer">
+        Brought to you by 
+                                                                                        <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+                                                                                    </div>
+                                                                                </div>
+                                                                            </body>
+                                                                        </html>
+                                                                        <!--

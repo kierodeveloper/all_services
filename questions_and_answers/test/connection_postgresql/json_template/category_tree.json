@@ -1,0 +1,63 @@
+{
+    "MCO1071": {
+        "id": "MCO1071",
+        "name": "Animales y Mascotas",
+        "picture": "http://resources.mlstatic.com/category/images/0b18438b-f56c-421a-a020-f581f40f4c24.png",
+        "permalink": "http://home.mercadolibre.com.co/animales-y-mascotas/",
+        "total_items_in_this_category": 485307,
+        "path_from_root": [
+            {
+                "id": "MCO1071",
+                "name": "Animales y Mascotas"
+            }
+        ],
+        "children_categories": [
+            {
+                "id": "MCO1100",
+                "name": "Aves",
+                "total_items_in_this_category": 10574
+            },
+            {
+                "id": "MCO6142",
+                "name": "Caballos",
+                "total_items_in_this_category": 8278
+            },
+            {
+                "id": "MCO418307",
+                "name": "Equipamiento para Veterinarias",
+                "total_items_in_this_category": 3254
+            },
+            {
+                "id": "MCO1081",
+                "name": "Gatos",
+                "total_items_in_this_category": 57345
+            },
+            {
+                "id": "MCO3615",
+                "name": "Libros de Animales",
+                "total_items_in_this_category": 4235
+            },
+            {
+                "id": "MCO1091",
+                "name": "Peces",
+                "total_items_in_this_category": 53068
+            },
+            {
+                "id": "MCO1072",
+                "name": "Perros",
+                "total_items_in_this_category": 319394
+            },
+            {
+                "id": "MCO1105",
+                "name": "Roedores",
+                "total_items_in_this_category": 5636
+            },
+            {
+                "id": "MCO6152",
+                "name": "Otros",
+                "total_items_in_this_category": 23394
+            }
+        ]
+        
+    }
+}
